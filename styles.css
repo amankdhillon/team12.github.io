@@ -1,7 +1,32 @@
-h1 {text-align: center; color: cornflowerblue; font-family: helvetica;}
-        h2 {text-align: center;color: cornflowerblue; font-family: helvetica;}
-        h3 {text-align: center;color: cornflowerblue; font-family: helvetica;}
-        form {text-align: center;color: cornflowerblue; font-family: helvetica;}
-        nav {text-align: center;color: cornflowerblue; font-family: helvetica;}
 
-        body{background-image: url(backgrnd_wic.png);}
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h3 {
+    text-align:center;
+    color:cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+form {
+    text-align:center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+nav {
+    text-align:center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body{background-color: rgb(255, 220, 124);}
