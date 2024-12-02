@@ -1,0 +1,93 @@
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:center;
+    color: rgba(16, 4, 152, 0.853);
+    font-family: 'Pixelify Sans';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body{background-color: rgb(211, 250, 250);}
+
+
+.question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.question1 {
+    background-color: #ffa882;
+}
+
+.question2 {
+    background-color: #a2efaf;
+}
+
+.question3 {
+    background-color: #c76ef0;
+}
+
+.question4 {
+    background-color: #f3a3e1;
+}
+
+.question5 {
+    background-color: #8e8eff;
+}
+
+.question6 {
+    background-color: #9bf5d2;
+}
+
+.question7 {
+    background-color: #ff8ebf;
+}
+
+.question8 {
+    background-color: #8ee8ff;
+}
+
+.question9 {
+    background-color: #fbff8e;
+}
+
+.question10 {
+    background-color: #8eff94;
+}
+
+.submit-button {
+    color: rgb(171, 223, 244);
+    border: 2px solid rgb(223, 144, 223);
+    background-color: rgb(227, 152, 240);
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 20px;
+
+}
+
+.image-option {
+    width: 10em;
+    height: 10em;
+}
