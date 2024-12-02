@@ -3,12 +3,14 @@ h1 {
     text-align: center;
     color: cornflowerblue;
     font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3rem;
 }
 
 h2 {
     text-align: center;
     color: cornflowerblue;
     font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
 }
 
 h3 {
@@ -27,9 +29,139 @@ nav {
     text-align:center;
     color: cornflowerblue;
     font-family: 'Pixelify Sans', sans-serif;
+
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: rgb(255, 220, 124);
+        background-color: #6495ed;
+        border: none;
+        border-radius: 15px;
+        box-shadow: -5px 9px #ED6495;
+      }
+      
+      .button:hover {
+        background-color: #1a62e2
+    }
+      
+      .button:active {
+        background-color:#1a62e2;
+        box-shadow: -5px 5px #CB1858;
+        transform: translateY(4px);
+      }
 }
 
-body{background-color: rgb(255, 220, 124);}
+.smiski_intro {
+    img {
+        position: fixed;
+        height: auto; 
+        max-width: 25%;
+        margin-left: -3%;
+        }
+    animation: float 2s ease-in-out infinite;
+}
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+}
+
+.sonny_intro {
+    img {
+        position: fixed;
+        height: auto; 
+        max-width: 30%;
+        margin-left: 20%;
+        transform: translate(-25%, 0);
+        }
+    animation: float 2s ease-in-out infinite;
+}
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+}
+
+.hirono_intro {
+    img {
+        position: fixed;
+        height: auto; 
+        max-width: 30%;
+        margin-left: 38%;
+        transform: translate(-25%, 0);
+        }
+    animation: float 2s ease-in-out infinite;
+}
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+}
+
+.mofusand_intro {
+    img {
+        position: fixed;
+        height: auto;
+        max-width: 30%;
+        margin-left: 63%;
+        transform: translate(-50%, 0);
+        }
+    animation: float 2s ease-in-out infinite;
+}
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+}
+
+.peach_intro {
+    img {
+        position: fixed;
+        height: auto; 
+        max-width: 25%;
+        margin-left: 85%;
+        transform: translate(-50%, 0);
+        }
+    animation: float 2s ease-in-out infinite;
+}
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+}
+
+.rotateStar {
+    width: auto;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+
+.rotateStar:hover {
+    transform: rotate(180deg);
+}
+
+body{background-color: #ffdc7c;}
+
 
 
 
