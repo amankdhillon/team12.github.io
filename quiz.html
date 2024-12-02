@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -90,6 +90,78 @@
                 </form>
             </section>
         </main>  
-        <button onclick="window.location.href='result.html';">Submit</button>     
+        <button id="submit">Submit</button>
+        
+        <!-- Javascript score system -->
+        <script>
+            document.getElementById("submit").addEventListener("click", function() {
+                const numQuestions = 10;
+                let sonnyAngel = 0;
+                let smiski = 0;
+                let peachRiot = 0;
+                let hirono = 0;
+                let mosfusandCat = 0;
+
+                const scoring = {
+                    question1: { "Coffee": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 },
+                                 "Tea": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question2: { "Stay in": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Go out": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question3: { "Go to the beach": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Go on a hike": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question4: { "Messy": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Organized": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question5: { "Listen to music": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Watch a movie": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question6: { "Coffee": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Tea": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question7: { "Stay in": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Go out": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question8: { "Go to the beach": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Go on a hike": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question9: { "Messy": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                 "Organized": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } },
+
+                    question10: { "Listen to music": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 }, 
+                                  "Watch a movie": { sonnyAngel: 0, smiski: 0, peachRiot: 0, hirono: 0, mosfusandCat: 0 } }
+                };
+
+                for (let i = 1; i <= 5; i++) {
+                    const selected = document.querySelector(`input[name="question${i}"]:checked`);
+                    if (selected) {
+                        const value = selected.value;
+                        sonnyAngel += scoring[`question${i}`][value].sonnyAngel;
+                        smiski += scoring[`question${i}`][value].smiski;
+                        peachRiot += scoring[`question${i}`][value].peachRiot;
+                        hirono += scoring[`question${i}`][value].hirono;
+                        mosfusandCat += scoring[`question${i}`][value].mosfusandCat;
+                    }
+                }
+
+                const scores = [sonnyAngel, smiski, peachRiot, hirono, mosfusandCat];
+                let max = Math.max(...scores);
+                
+                if (sonnyAngel == max) {
+                    window.location.href = 'result.html';
+                } else if (smiski == max) {
+                    window.location.href = 'result.html';
+                } else if (peachRiot == max) {
+                    window.location.href = 'result.html';
+                } else if (hirono == max) {
+                    window.location.href = 'result.html';
+                } else if (mosfusandCat == max) {
+                    window.location.href = 'result.html';
+                }                
+            });
+        </script>
+
     </body>
 </html>
