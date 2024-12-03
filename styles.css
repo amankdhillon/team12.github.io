@@ -156,9 +156,7 @@ nav {
     transition: transform 0.5s ease;
 }
 
-.rotateStar:hover {
-    transform: rotate(180deg);
-}
+
 
 body{background-color: #ffdc7c;}
 
