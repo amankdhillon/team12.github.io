@@ -135,9 +135,9 @@ form {
 .peach_intro {
     img {
         position: fixed;
-        height: auto; 
+        height: auto;
         max-width: 30%;
-        margin-left: 85%;
+        margin-left: 83%;
         transform: translate(-50%, 0);
         }
     animation: float 2s ease-in-out infinite;
@@ -149,12 +149,6 @@ form {
         50% {
             transform: translateY(20px);
         }
-}
-
-.rotateStar {
-    width: auto;
-    height: 100px;
-    transition: transform 0.5s ease;
 }
 
 
