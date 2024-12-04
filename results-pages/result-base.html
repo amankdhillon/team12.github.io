@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link="<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
 
         body {
             background-color: #ffd1dc; 
-            font-family: 'Pixelify Sans', sans-serif; 
+            font-family: 'Poppins', sans-serif; 
             margin: 0;
             padding: 0;
             display: flex;
@@ -30,15 +27,15 @@
             width: 90%;
         }
         .title {
-            font-family: 'Pixelify Sans'; 
-            font-size: 35px;
+            font-family: 'Pacifico', cursive; 
+            font-size: 28px;
             color: #ff6f91;
             margin-bottom: 20px;
         }
         h1 {
             font-size: 24px;
             margin-bottom: 30px;
-            color: #1a62e2;
+            color: #333;
         }
         .image-container {
             margin-top: 20px;
@@ -54,12 +51,12 @@
             color: #555;
             line-height: 1.6;
             max-width: 500px;
-            text-align: center;
+            text-align: justify;
             margin: 0 auto;
             padding: 0 10px;
         }
         .button {
-            font-family: 'Pixelify Sans', sans-serif; 
+            font-family: 'Poppins', sans-serif; 
             color:#1a62e2;
             padding: 10px 10px;
             text-align: center;
@@ -78,21 +75,20 @@
 </head>
 <body>
     <main>
-        <div class="title">Sonny Angel</div>
+        <div class="title">You are *blank* blind box toy!</div>
         <h1 id="resultText"></h1>
 
         <div class="image-container">
-            <img src="https://i.pinimg.com/736x/0f/f6/ac/0ff6ac3814a5b7c12ec7604835942db9.jpg" alt="Sonny Angel">
+            <img src="toy-placeholder.jpg" alt="Blind Box Toy"> <!-- Replace with actual image URL -->
             <p class="description">
-                You are playful, curious, and endearing!!! <!-- list attributes -->
+                *Insert text*
             </p>
         </div>
 
         <script>
-            const name = localStorage.getItem('user');
-            document.getElementById('resultText').textContent = `Congratulations, ${name ? name: 'Guest'}! You are a Sonny Angel!`;
+            const name = localStorage.getItem('user') || 'Guest';
+            document.getElementById('resultText').innerText = `Congratulations, ${name}! You are a ____`;
         </script>
-        <br>
         <button class="button" onclick="window.location.href='../index.html';">Back to Home</button>
     </main>
 </body>
