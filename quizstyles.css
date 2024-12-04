@@ -83,15 +83,40 @@ body{background-color: rgb(211, 250, 250);}
     background-color: #8eff94;
 }
 
-.submit {
-    color: #1a62e2;
-    border: 2px solid rgb(223, 144, 223);
-    background-color: rgb(227, 152, 240);
+.back {
     font-family: 'Pixelify Sans', sans-serif;
-    font-size: 22px;
-    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    background-color: #ffaad4;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.back:hover{
+    background-color: #ff6f91;
+    color: white;
+}
+
+.submit {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    background-color: #ffaad4;
+    border: 2px solid rgb(223, 144, 223);
+    border-radius: 15px;
     width: 100px;
     height: 50px;
+}
+
+.submit:hover{
+    background-color: #ff6f91;
+    color: white;
 }
 
 .image-option {

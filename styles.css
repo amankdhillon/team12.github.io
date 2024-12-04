@@ -25,35 +25,36 @@ form {
     font-family: 'Pixelify Sans', sans-serif;
 }
 
-nav {
+#nameForm {
     text-align:center;
     color: cornflowerblue;
     font-family: 'Pixelify Sans', sans-serif;
+}
 
-    .button {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 24px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: rgb(255, 220, 124);
-        background-color: #6495ed;
-        border: none;
-        border-radius: 15px;
-        box-shadow: -5px 9px #ED6495;
-      }
+#nameForm button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    outline: none;
+    color: rgb(255, 220, 124);
+    background-color: #6495ed;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -5px 9px #ED6495;
+}
       
-      .button:hover {
-        background-color: #1a62e2
-    }
+#nameForm button:hover {
+    background-color: #1a62e2
+}
       
-      .button:active {
-        background-color:#1a62e2;
-        box-shadow: -5px 5px #CB1858;
-        transform: translateY(4px);
-      }
+#nameForm button:active {
+    background-color:#1a62e2;
+    box-shadow: -5px 5px #CB1858;
+    transform: translateY(4px);
 }
 
 .smiski_intro {
