@@ -19,9 +19,9 @@ These files implement HTML, CSS, and JavaScript to design and link our intro, qu
 They also save the quiz-taker's name and determine their best-matched Blind Box Series using a scoring system.
 
 ### Credits and Acknowledgements:
-Katie Moc (kmoc@ucsd.edu): HTML and JavaScript of index and quiz pages
+Katie Moc (kmoc@ucsd.edu): HTML, CSS, and JavaScript of quiz and result pages
 
-Sakura Sasaki (sasasaki@ucsd.edu): HTML and CSS of index page
+Sakura Sasaki (sasasaki@ucsd.edu): HTML and CSS of index and result pages
   
 Leona Lai (lelai@ucsd.edu): HTML and CSS of quiz page
   
