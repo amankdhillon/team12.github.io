@@ -62,7 +62,7 @@ form {
         position: fixed;
         height: auto; 
         max-width: 25%;
-        margin-left: -3%;
+        margin-left: 0;
         }
     animation: float 2s ease-in-out infinite;
 }
@@ -136,7 +136,7 @@ form {
     img {
         position: fixed;
         height: auto; 
-        max-width: 25%;
+        max-width: 100%;
         margin-left: 85%;
         transform: translate(-50%, 0);
         }

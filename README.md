@@ -7,7 +7,7 @@
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-### Try out our website here: 
+### Try out our website here: https://amankdhillon.github.io/team12.github.io/
 
 This Buzzfeed-style quiz determines which Blind Box Figurine matches someone based on their answers to 10 questions/preferences. 
 A blind box is a type of packaging often used for collectibles, toys, or merchandise where the contents are hidden from the buyer until the box is opened. 

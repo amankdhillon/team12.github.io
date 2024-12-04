@@ -34,14 +34,14 @@
         }
         .title {
             font-family: 'Pixelify Sans', sans-serif;
-            font-size: 28px;
+            font-size: 35px;
             color: #ff6f91;
             margin-bottom: 20px;
         }
         h1 {
             font-size: 24px;
             margin-bottom: 30px;
-            color: #1a62e2;
+            color:#1a62e2;;
         }
         .image-container {
             margin-top: 20px;
@@ -62,7 +62,7 @@
             padding: 0 10px;
         }
         .button {
-            font-family: 'Pixelify Sans', sans-serif; 
+            font-family: 'Pixelify Sans', sans-serif;
             padding: 10px 10px;
             text-align: center;
             text-decoration: none;
@@ -80,19 +80,19 @@
 </head>
 <body>
     <main>
-        <div class="title">Smiski</div>
+        <div class="title">Peach Riot</div>
         <h1 id="resultText"></h1>
 
         <div class="image-container">
-            <img src="/figurine-images/smiski.jpeg" alt="Smiski">
+            <img src="https://i.pinimg.com/736x/5d/21/c2/5d21c25605ada24b204df7186a882333.jpg" alt="Peach Riot"> <!-- Replace with actual image URL -->
             <p class="description">
-                You are curious, gentle, and comforting!!! <!-- list attributes -->
+                You are energetic, optimistic, and creative!!!  <!-- list attributes -->
             </p>
         </div>
 
         <script>
             const name = localStorage.getItem('user');
-            document.getElementById('resultText').textContent = `Congratulations, ${name ? name: 'Guest'}! You are a Smiski!`;
+            document.getElementById('resultText').textContent = `Congratulations, ${name ? name: 'Guest'}! You are a Peach Riot!`;
         </script>
         <br>
         <button class="button" onclick="window.location.href='../index.html';">Back to Home</button>
