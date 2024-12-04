@@ -38,7 +38,7 @@
         h1 {
             font-size: 24px;
             margin-bottom: 30px;
-            color: #333;
+            color: #1a62e2;
         }
         .image-container {
             margin-top: 20px;
@@ -88,10 +88,10 @@
         </div>
 
         <script>
-            const name = localStorage.getItem('user') || 'Guest';
-            document.getElementById('resultText').innerText = `Congratulations, ${name}! You are a Sonny Angel!`;
+            const name = localStorage.getItem('user');
+            document.getElementById('resultText').textContent = `Congratulations, ${name ? name: 'Guest'}! You are a Sonny Angel!`;
         </script>
-
+        <br>
         <button class="button" onclick="window.location.href='../index.html';">Back to Home</button>
     </main>
 </body>

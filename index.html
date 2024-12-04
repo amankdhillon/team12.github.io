@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -19,25 +15,23 @@
        
     </style>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
 
         <h1> what kind of blind box figurine are you? </h1>
         <h2> take the quiz to find out! </h2>
 
         <h3> enter your name </h3>
-        <form onsubmit="getName(event)">
-            <label for="name" id="name"></label>
-            <input type="text" id="name" name="name" placeholder="Please enter your name" required><br><br>
-           <!-- i wasnt sure how to implement the name storing feature without modifying this part pls feel free to modify - nat -->
+        <form id="nameForm">
+            <input type="text" id="name" placeholder="Please enter your name" required><br><br>
+            <button type="submit">Start Quiz!</button>
         </form>
-        <script src="quizScript.js"></script>
-        <nav>
-            <a href="quiz.html" class="button"> Start Quiz! </a>
-        </nav>
+        <script>
+            document.getElementById('nameForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                localStorage.setItem('user', name);
+                window.location.href = 'quiz.html';
+        });
+        </script>
     </body>
     
     <div class="smiski_intro">
