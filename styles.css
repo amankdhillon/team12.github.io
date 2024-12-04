@@ -136,7 +136,7 @@ form {
     img {
         position: fixed;
         height: auto; 
-        max-width: 100%;
+        max-width: 30%;
         margin-left: 85%;
         transform: translate(-50%, 0);
         }
